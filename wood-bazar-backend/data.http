@@ -1,0 +1,272 @@
+###
+GET http://localhost:8081/products/
+
+###
+POST http://localhost:8081/products/
+
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="products"
+
+[{
+    "Name": "4 seater Wooden Sofa Set",
+    "prod_desc": "Experience comfort and elegance...",
+    "price": "25000",
+    "any_offer": "true",
+    "discount": "10"
+}]
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="Img_file"; filename="4-seater-wooden-sofa-set.jpg"
+Content-Type: image/jpeg
+
+< ./Images/4-seater-wooden-sofa-set.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+
+
+### get product details
+
+GET http://localhost:8081/product/12/
+
+### post detailed Products
+
+POST http://localhost:8081/details
+Content-Type: application/json
+
+[
+    {   "item_Id":4,
+        "Prod_id": 15,
+        "available_offers": "2% off",
+        "warranty_months":1,
+        "delivery_date":"22-sep-2024",
+        "highlights": "High quality, Durable",
+        "rating": 3.8,
+        "review": "Great product!"
+    },
+    {   "item_Id":5,
+        "Prod_id": 14,
+        "available_offers": "5% off",
+        "warranty_months":3,
+        "delivery_date":"23-aug-2024",
+        "highlights": "High quality, Durable",
+        "rating": 4.2,
+        "review": "Great product!"
+    },
+    {   "item_Id":6,
+        "Prod_id": 15,
+        "available_offers": "10% off",
+        "warranty_months":1.5,
+        "delivery_date":"22-sep-2024",
+        "highlights": "High quality, Durable",
+        "rating": 4.2,
+        "review": "Great product!"
+    },
+    {   "item_Id":7,
+        "Prod_id": 16,
+        "available_offers": "0% off",
+        "warranty_months":1.5,
+        "delivery_date":"30-sep-2024",
+        "highlights": "High quality, Durable",
+        "rating": 2.5,
+        "review": "Great product!"
+    },
+    {   "item_Id":8,
+        "Prod_id": 17,
+        "available_offers": "8% off",
+        "warranty_months":2,
+        "delivery_date":"22-sep-2024",
+        "highlights": "High quality, Durable",
+        "rating": 4.0,
+        "review": "Very Nice product!"
+    },
+    {   "item_Id":9,
+        "Prod_id": 18,
+        "available_offers": "10% off",
+        "warranty_months":2,
+        "delivery_date":"22-oct-2024",
+        "highlights": "High quality, Durable",
+        "rating": 4.2,
+        "review": "long lasting!"
+    },
+    {   "item_Id":10,
+        "Prod_id": 19,
+        "available_offers": "10% off",
+        "warranty_months":1.5,
+        "delivery_date":"22-sep-2024",
+        "highlights": "High quality, Durable",
+        "rating": 4.2,
+        "review": "Great product!"
+    },
+    {   "item_Id":11,
+        "Prod_id": 20,
+        "available_offers": "23% off",
+        "warranty_months":1,
+        "delivery_date":"22-aug-2024",
+        "highlights": "High quality, Durable",
+        "rating": 3.2,
+        "review": "Great product!"
+    },
+    {   "item_Id":12,
+        "Prod_id": 21,
+        "available_offers": "65% off",
+        "warranty_months":1.5,
+        "delivery_date":"22-sep-2024",
+        "highlights": "High quality, Durable",
+        "rating": 2.2,
+        "review": "Great product!"
+    },
+    {   "item_Id":13,
+        "Prod_id": 22,
+        "available_offers": "12% off",
+        "warranty_months":1.5,
+        "delivery_date":"10-aug-2024",
+        "highlights": "High quality, Durable",
+        "rating": 4.8,
+        "review": "Full Dry Wooden Product!"
+    },
+    {   "item_Id":14,
+        "Prod_id": 23,
+        "available_offers": "10% off",
+        "warranty_months":1.5,
+        "delivery_date":"22-sep-2024",
+        "highlights": "High quality, Durable",
+        "rating": 4.2,
+        "review": "Great product!"
+    },
+    {   "item_Id":15,
+        "Prod_id": 24,
+        "available_offers": "10% off",
+        "warranty_months":1.5,
+        "delivery_date":"22-sep-2024",
+        "highlights": "High quality, Durable",
+        "rating": 4.2,
+        "review": "Great product!"
+    },
+    {   "item_Id":16,
+        "Prod_id": 25,
+        "available_offers": "70% off",
+        "warranty_months":0,
+        "delivery_date":"22-sep-2024",
+        "highlights": "High quality, Durable",
+        "rating": 2.2,
+        "review": "Great product!"
+    },
+    {   "item_Id":17,
+        "Prod_id": 26,
+        "available_offers": "10% off",
+        "warranty_months":1.5,
+        "delivery_date":"10-sep-2024",
+        "highlights": "High quality, Durable",
+        "rating": 4.9,
+        "review": "Great product!"
+    },
+    {   "item_Id":18,
+        "Prod_id": 27,
+        "available_offers": "10% off",
+        "warranty_months":1.5,
+        "delivery_date":"22-sep-2024",
+        "highlights": "High quality, Durable",
+        "rating": 4.2,
+        "review": "Great product!"
+    },
+    {   "item_Id":19,
+        "Prod_id": 28,
+        "available_offers": "2% off",
+        "warranty_months":3.5,
+        "delivery_date":"22-sep-2024",
+        "highlights": "High quality, Durable",
+        "rating": 4.1,
+        "review": "Great product!"
+    },
+    {   "item_Id":20,
+        "Prod_id": 29,
+        "available_offers": "0% off",
+        "warranty_months":4.5,
+        "delivery_date":"22-sep-2024",
+        "highlights": "High quality, Durable",
+        "rating": 4.2,
+        "review": "Great product!"
+    },
+    {   "item_Id":21,
+        "Prod_id": 30,
+        "available_offers": "12% off",
+        "warranty_months":1.5,
+        "delivery_date":"12-sep-2024",
+        "highlights": "High quality, Durable",
+        "rating": 3.2,
+        "review": "Great product!"
+    },
+    {   "item_Id":22,
+        "Prod_id": 31,
+        "available_offers": "6% off",
+        "warranty_months":2.5,
+        "delivery_date":"12-aug-2024",
+        "highlights": "High quality, Durable",
+        "rating": 3.2,
+        "review": "Great product!"
+    },
+    {   "item_Id":23,
+        "Prod_id": 32,
+        "available_offers": "10% off",
+        "warranty_months":1.5,
+        "delivery_date":"22-sep-2024",
+        "highlights": "High quality, Durable",
+        "rating": 4.2,
+        "review": "Great product!"
+    },
+    {   "item_Id":24,
+        "Prod_id": 34,
+        "available_offers": "10% off",
+        "warranty_months":1.5,
+        "delivery_date":"22-sep-2024",
+        "highlights": "High quality, Durable",
+        "rating": 4.2,
+        "review": "Great product!"
+    }
+    
+]
+
+
+### user registration
+
+POST http://localhost:8081/register
+Content-Type: application/json
+
+{
+  "user_name": "testuser",
+  "email": "testuser@example.com",
+  "password": "testpassword",
+  "first_name": "Test",
+  "last_name": "User"
+}
+
+
+### login user
+
+POST http://localhost:8081/login
+Content-Type: application/json
+
+{
+  "email": "testuser@example.com",
+  "password": "testpassword"
+}
+
+### post check out address
+
+POST http://localhost:8081/checkoutAddress
+Content-Type: application/json
+
+{
+    "user_id":4,
+    "country":"India",
+    "firstName":"user",
+    "lastName":"testing",
+    "address_line_1":"BCS",
+    "address_line_2":"uhd",
+    "apartment":"AVS",
+    "stateCountry":"AP",
+    "postalZip":"533286",
+    "phone":"9836739832",
+    "emailAddress":"user@gamil.cocm"
+}

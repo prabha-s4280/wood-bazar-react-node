@@ -1,0 +1,217 @@
+/* General Styles */
+.product-details-section {
+  padding: 20px 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-name {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.product-price {
+  font-size: 24px;
+  color: #e63946;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.product-discount {
+  font-size: 16px;
+  color: #38b000;
+  margin-bottom: 15px;
+}
+
+.delivery-time,
+.warranty-time {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.product-highlights {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.action-buttons {
+  margin-top: 20px;
+}
+
+.btn-buy,
+.btn-cart {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-buy {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-buy:hover {
+  background-color: #0056b3;
+}
+
+.btn-cart {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-cart:hover {
+  background-color: #218838;
+}
+
+/* Styling for Ratings and Reviews */
+.product-rating,
+.product-reviews {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.product-rating {
+  font-weight: 700;
+}
+
+.product-reviews {
+  color: #555;
+}
+
+.ratings-reviews {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col-12.col-md-6 {
+    width: 100%;
+  }
+
+  .action-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Other CSS for the page (unchanged) */
+/* Add this to your CSS file */
+.reviews-section {
+  margin: 20px 0;
+}
+
+.user-icon {
+  font-size: 1.5rem; /* Adjust size as needed */
+  color: #007bff;    /* Adjust color as needed */
+}
+
+.username {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.review-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+}
+
+.review-text {
+  margin: 10px 0;
+}
+
+.review-rating {
+  font-weight: bold;
+}
+
+/* Add this to your productDetails.css */
+.price-section {
+  margin: 15px 0;
+}
+
+.original-price {
+  font-size: 1.5rem;
+  color: #dc3545; /* Red color for strikethrough */
+  text-decoration: line-through;
+}
+
+.discounted-price {
+  font-size: 1.5rem;
+  color: #28a745; /* Green color for discounted price */
+  margin-left: 10px;
+}

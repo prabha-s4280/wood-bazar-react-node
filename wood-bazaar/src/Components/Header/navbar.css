@@ -1,0 +1,290 @@
+/* src/Header/navbar.css */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+.items {
+  text-decoration: none;
+  transition: .3s all ease;
+  color: #ffffff;
+}
+.items:hover {
+  color: #f9bf29;
+  text-decoration: none;
+}
+.items.more {
+  font-weight: 600;
+}
+
+.custom-navbar {
+  background: #3b5d50 !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.custom-navbar .navbar-brand {
+  font-size: 32px;
+  font-weight: 600;
+}
+.custom-navbar .navbar-brand > span {
+  opacity: .4;
+}
+.custom-navbar .navbar-toggler {
+  border-color: transparent;
+}
+.custom-navbar .navbar-toggler:active, .custom-navbar .navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link.items {
+  color: #fff; /* Default color for navbar links */
+}
+
+.nav-link.items.active {
+  color: #FFD700; /* Color for active state */
+  font-weight: bold; /* Optional: make active link bold */
+}
+
+.custom-navbar .navbar-nav .nav-item {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.custom-navbar .navbar-nav .nav-link {
+  font-weight: 500;
+  color: #ffffff !important;
+  opacity: .8;
+  transition: .3s all ease;
+  position: relative;
+}
+.custom-navbar .navbar-nav .nav-link:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+  right: 8px;
+  background: #f9bf29;
+  height: 5px;
+  opacity: 1;
+  visibility: visible;
+  width: 0;
+  transition: .15s all ease-out;
+}
+.custom-navbar .navbar-nav .nav-link:hover {
+  opacity: 1;
+}
+.custom-navbar .navbar-nav .nav-link:hover:before {
+  width: calc(100% - 16px);
+}
+.custom-navbar .navbar-nav .nav-item.active .nav-link {
+  opacity: 1;
+}
+.custom-navbar .navbar-nav .nav-item.active .nav-link:before {
+  width: calc(100% - 16px);
+}
+.custom-navbar .navbar-cta {
+  margin-left: 0 !important;
+  flex-direction: row;
+}
+.custom-navbar .navbar-cta .nav-item {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.custom-navbar .navbar-cta .nav-item:first-child {
+  margin-right: 20px;
+}
+/* src/components/Hero.css */
+.hero {
+  background: #3b5d50;
+  padding: calc(0.5rem - 30px) 0 0rem 0; /* Reduced top padding for mobile */
+}
+
+@media (min-width: 768px) {
+  .hero {
+      padding: calc(2rem - 30px) 0 0rem 0; /* Reduced top and bottom padding for tablets */
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+      padding: calc(10rem - 30px) 0 0rem 0; /* Reduced top and bottom padding for desktops */
+  }
+}
+
+.hero .intro-excerpt {
+  position: relative;
+  z-index: 4;
+}
+
+@media (min-width: 992px) {
+  .hero .intro-excerpt {
+      max-width: 450px;
+  }
+}
+
+.hero h1 {
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1400px) {
+  .hero h1 {
+      font-size: 54px;
+  }
+}
+
+.hero p {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 30px;
+}
+
+.hero .hero-img-wrap {
+  position: relative;
+}
+
+.hero .hero-img-wrap img {
+  width: 100%; /* Default to full width */
+}
+
+@media (min-width: 576px) {
+  .hero .hero-img-wrap img {
+      width: 80%; /* Slightly reduce for extra small devices */
+  }
+}
+
+.hero .hero-img-wrap img {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+  max-width: 780px;
+  left: -20px;
+}
+
+@media (min-width: 768px) {
+  .hero .hero-img-wrap img {
+      width: 60%; /* Reduce more for small devices */
+      left: -50px;
+      right: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero .hero-img-wrap img {
+      width: 70%; /* Further reduce for medium devices */
+      left: 0px;
+      top: -80px;
+      right: -50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero .hero-img-wrap img {
+      width: 100%; /* Original size for large devices */
+      left: 0px;
+      top: -80px;
+      right: -100px;
+  }
+}
+
+.hero .hero-img-wrap:after {
+  content: "";
+  position: absolute;
+  width: 255px;
+  height: 217px;
+  background-image: url("./images/dots-light.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: -100px;
+  top: 0px;
+}
+
+@media (min-width: 1200px) {
+  .hero .hero-img-wrap:after {
+      top: -40px;
+  }
+}
+
+.btn {
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #ffffff;
+  background: #2f2f2f;
+  border-color: #2f2f2f;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background: #222222;
+  border-color: #222222;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.btn.btn-primary {
+  background: #3b5d50;
+  border-color: #3b5d50;
+}
+
+.btn.btn-primary:hover {
+  background: #314d43;
+  border-color: #314d43;
+}
+
+.btn.btn-secondary {
+  color: #2f2f2f;
+  background: #f9bf29;
+  border-color: #f9bf29;
+}
+
+.btn.btn-secondary:hover {
+  background: #f8b810;
+  border-color: #f8b810;
+}
+
+.btn.btn-white-outline {
+  background: transparent;
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn.btn-white-outline:hover {
+  border-color: white;
+  color: #ffffff;
+}
+
+/* Base styles for navbar links */
+.nav-link.items {
+  color: #fff; /* Default color for navbar links */
+  text-decoration: none; /* Remove default underline */
+  position: relative; /* Position relative to enable absolute positioning of the underline */
+}
+
+/* Active state styles */
+.nav-link.items.active {
+  color: #FFD700; /* Color for active state */
+  font-weight: bold; /* Optional: make active link bold */
+}
+
+/* Underline for active state */
+.nav-link.items::after {
+  content: ""; /* Empty content for the pseudo-element */
+  position: absolute; /* Absolute positioning to place it below the text */
+  left: 0;
+  bottom: 0;
+  width: 100%; /* Full width of the text */
+  height: 2px; /* Thickness of the underline */
+  background-color: #FFD700; /* Color of the underline */
+  transform: scaleX(0); /* Initially hide the underline */
+  transform-origin: bottom right; /* Origin for the scaling */
+  transition: transform 0.3s ease; /* Smooth transition for the underline */
+}
+
+/* Show underline when link is active */
+.nav-link.items.active::after {
+  transform: scaleX(1); /* Show the underline by scaling it */
+  transform-origin: bottom left; /* Origin for scaling when active */
+}
